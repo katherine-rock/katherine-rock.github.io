@@ -13,14 +13,8 @@ h1 {
 }
 
 h2 {
-    font-size: 1.4em;
+    font-size: 1.5em;
     padding: 0.25em 0 .5em 0;
-}
-
-h3 {
-    padding: .75em 0 .5em 0;
-    font-size: 1.4em;
-    color: #00417C;
 }
 
 header {
@@ -32,6 +26,7 @@ header {
 
 header img {
     max-width: 100%;
+    opacity: 0.6;
 }
 
 .headings {
@@ -45,7 +40,12 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding: 0 1.5em 1em 1.5em;
-    font-size: 1.3em;
+}
+
+h3 {
+    padding: .75em 0 .5em 0;
+    font-size: 1.4em;
+    color: #00417C;
 }
 
 hr {
@@ -62,6 +62,7 @@ hr {
 main p {
     text-align: left;
     line-height: 120%;
+    font-size: 1.2em;
 }
 
 .links img {
@@ -86,15 +87,33 @@ footer {
 
     
 body {
-    background-image: url("images/vectorstock_26088399_main_fullsize.png");
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
+    background-color: #00417C;
 }    
+
+body::before {
+    content: "";
+    background-image: url("images/vectorstock_26088399_main_fullsize.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+    position: absolute;
+
+}
+
+.desktop_image {
+    display: block;
+    width: 100%;
+}
 
 header img {
     display: none;
@@ -106,18 +125,21 @@ header {
 
 h1 {
     font-size: 4em;
-    padding: 1.5em .5em .5em .5em;
+    padding: 1.2em .5em .5em .5em;
 }
 
 h2 {
     font-size: 3em;
     padding: .5em;
+    position: relative;
 }
 
 h3 {
-    padding: 3em 0 .5em 0;
+    font-size: 2em;
+    padding: 1em 0 .5em 0;
     color: white;
     text-shadow: 2px 2px #30343F;
+    position: relative;
 }
 
 hr {
@@ -135,6 +157,12 @@ main {
     padding: 0 20%;
     color: white;
     text-shadow: 1.5px 1.5px #30343F;
+    position: relative;
+
+}
+
+main p {
+    font-size: 1.5em;
 }
 
 .links {
@@ -142,6 +170,7 @@ main {
     flex-direction: row;
     align-items: flex-end;
     justify-content: center;
+    position: relative;
 }
 
 .links a {
@@ -152,6 +181,7 @@ main {
 footer {
     color: white;
     padding-top: 3em;
+    position: relative;
 }
 
 }
