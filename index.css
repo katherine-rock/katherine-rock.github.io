@@ -86,16 +86,17 @@ footer {
 @media  screen and (min-width: 600px) {
 
     
-body {
+.intro {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
-    background-color: #00417C;
+    background-color: #3082cf;
+    padding: 4em 0;
 }    
 
-body::before {
+.intro::before {
     content: "";
     background-image: url("images/vectorstock_26088399_main_fullsize.png");
     background-position: center top;
@@ -107,7 +108,11 @@ body::before {
     left: 0px;
     opacity: 0.6;
     position: absolute;
+}
 
+body {
+    /* background-color: #0660b4; */
+    background-image: linear-gradient(to right, #0660b4,#3DA1FF,#0660b4);
 }
 
 .desktop_image {
@@ -115,8 +120,17 @@ body::before {
     width: 100%;
 }
 
+.links a{
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
 header img {
     display: none;
+
 }
 
 header {
@@ -124,22 +138,31 @@ header {
 }
 
 h1 {
-    font-size: 4em;
-    padding: 1.2em .5em .5em .5em;
+    font-size: 6em;
+    padding: 0em .5em .5em .5em;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 4.5em;
     padding: .5em;
     position: relative;
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 3em;
     padding: 1em 0 .5em 0;
-    color: white;
-    text-shadow: 2px 2px #30343F;
+    color: #EA638C;
+    text-shadow: 2px 1px #30343F;
     position: relative;
+}
+
+.box {
+    margin: 4em 8em 0em 8em;
+    background-color: whitesmoke;
+    padding: 2em;
+    opacity: .9;
+    border: #00417C solid 1em;
+    border-radius: 1em;
 }
 
 hr {
@@ -161,6 +184,10 @@ main {
 
 }
 
+main h3 {
+    color: white;
+}
+
 main p {
     font-size: 1.5em;
 }
@@ -169,12 +196,12 @@ main p {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: space-evenly;
     position: relative;
 }
 
 .links a {
-    color: white;
+    color: #00417C;
     text-shadow: 1px 1px #30343F;
 }
 
