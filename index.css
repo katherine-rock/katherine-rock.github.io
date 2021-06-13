@@ -13,7 +13,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 0.25em 0 .5em 0;
 }
 
@@ -111,8 +111,8 @@ footer {
 }
 
 body {
-    /* background-color: #0660b4; */
-    background-image: linear-gradient(to right, #0660b4,#3DA1FF,#0660b4);
+    background-color: #d3e7fa;
+    /* background-image: linear-gradient(to right, #0660b4,#3DA1FF,#0660b4); */
 }
 
 .desktop_image {
@@ -158,11 +158,12 @@ h3 {
 
 .box {
     margin: 4em 8em 0em 8em;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 2em;
     opacity: .9;
     border: #00417C solid 1em;
     border-radius: 1em;
+    box-shadow: 5px 5px #888888;
 }
 
 hr {
@@ -207,6 +208,7 @@ main p {
 
 footer {
     color: white;
+    text-shadow: 1px 1px #30343F;
     padding-top: 3em;
     position: relative;
 }
