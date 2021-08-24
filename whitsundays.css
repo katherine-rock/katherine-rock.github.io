@@ -6,6 +6,12 @@
     font-size: 1em;
 }
 
+/* Image is hidden - it is only included here to have a permanent link for the LinkedIn features section to display */
+
+.hidden {
+    display: none;
+}
+
 body {
     background-color: #d3e7fa;
     /* background-image: linear-gradient(to right, #0660b4,#3DA1FF,#0660b4); */
