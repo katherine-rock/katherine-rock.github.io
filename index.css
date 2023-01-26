@@ -1,5 +1,4 @@
 /* Generic to set base styles  */
-
 * {
     margin: 0;
     padding: 0;
@@ -8,31 +7,25 @@
     font-size: 1em;
 }
 
-/* Headings  */
+/* Styles are organised in increasing screen width */
+/* For mobile screens */
 
+/* Headings  */
 h1 {
-    font-size: 300%;
-    padding: 1em .5em 0 .5em;
+    font-size: 3rem;
+    padding: 0em .5em 0 .5em;
     font-family: 'Lobster Two', cursive;
 }
 
 h2 {
-    font-size: 1em;
+    font-size: 2rem;
     padding: 0.25em 0 .5em 0;
 }
 
 h3 {
-    font-size: 1.8em;
-    padding: 0.5em 0 0 0;
-    color: #EA638C;
-    text-shadow: 1px 2px #30343F;
-}
-
-.about {
-    font-size: 1.4em;
-    padding: 0.25em 0 .5em 0;
+    padding: 0 0 .8rem 0;
     color: #00417C;
-    text-shadow: none;
+    font-size: 2rem;
 }
 
 h4 {
@@ -50,36 +43,59 @@ h5 {
 /* Header  */
 
 header {
+    display: flex;
+    flex-direction: row;
     color: white;
-    background-color: #00417C;
     text-shadow: 3px 3px #30343F;
+    text-align: center;
+    margin: auto;
+}
+
+.header-section {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    background-image: linear-gradient(to bottom left, #214159, #4282B3);
+    padding: 1em 0 0 0;
+    border-radius: 2rem;
+    margin: 1rem;
+}   
+
+/* Intro section - top summary of profile and skills - Mobile  */
+
+.intro {
+    display: flex;
+    flex-direction: column;
 }
 
-header img {
+.about {
+    padding: 3rem;
     max-width: 100%;
-    opacity: 0.6;
-}
-
-.headings {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* Intro section  */
-
-main {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 1.5em 1em 1.5em;
+}
+
+.about p {
+    text-align: left;
+}
+
+.skills {
+    padding: 3rem;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.skills p {
+    text-align: left;
 }
 
 hr {
     margin: 0 1.5em;
     height: .15em;
-    background-color: #00417C;
 }
 
 .name {
@@ -87,26 +103,15 @@ hr {
     font-weight: bold;
 }
 
-main p {
-    text-align: left;
-    line-height: 120%;
-    font-size: 1.2em;
-}
-
 /* Portfolio section  */
 
-/* Original portfolio section with icons  */
-.links img {
-    max-width: 5em;
+.portfolio {
+    margin: 1rem;
+    padding: 2rem 0 .5rem 0;
+    background-color: #F0F6FA;
+    border-radius: 2rem;
 }
 
-.links a {
-    color: #30343F;
-    font-size: 1.3em;
-    text-decoration: none;
-}
-
-/* New portfolio section with screenshots  */
 .links-portfolio img {
     max-width: 100%;
 }
@@ -117,92 +122,72 @@ main p {
     text-decoration: none;
 }
 
+.app_card:nth-child(2n) {
+    /* background-color: #E0EDF5; */
+}
+
 .app_card {
     border: solid .4rem #00417C;
     margin: 2rem;
+    border-radius: 1.2rem;
+    background-color: white;
 }
 
 figure {
     padding: .8rem;
 }
 
-/* Footer  */
+/* Footer - Connect section */
 
-footer {
-    padding: .5em;
+.set_margin {
+    margin: 1rem;
+    background-color: #33658A;
+    border-radius: 1.5rem;
 }
 
-/* Add media breakpoints - hide header image, add as background image  */
+.set_margin h3 {
+    color: #EA638C;
+    text-shadow: 1px 1px #30343F;
+    font-size: 2.5rem;
+    padding-top: 1rem;
 
-@media  screen and (min-width: 600px) {
+}
 
-    
-.intro {
-    position: relative;
+/* Footer section - Links and images */
+
+.links {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-    background-color: #3082cf;
-    padding: 4em 0;
-}    
-
-.intro::before {
-    content: "";
-    background-image: url("images/vectorstock_26088399_main_fullsize.png");
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.6;
-    position: absolute;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
 }
 
-.desktop_image {
-    display: block;
-    width: 100%;
+.links img {
+    max-width: 5em;
 }
 
 .links a {
-    font-size: 1.5em;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px #30343F;
 }
 
-p {
-    font-size: 1.2em;
-}
+/* Add media breakpoints for larger screens */
 
-header img {
-    display: none;
-}
+@media  screen and (min-width: 600px) {
 
-header {
-    background-color: transparent;
-}
+/* Header section - Tablet */   
 
 h1 {
-    font-size: 6em;
-    padding: 0em .5em .5em .5em;
+    font-size: 6rem;
+    padding: 0em .5em .25em .5em;
 }
 
 h2 {
-    font-size: 4.5em;
+    font-size: 4rem;
     padding: .5em;
-    position: relative;
-}
-
-.about {
-    font-size: 2em;
-    text-shadow: 1px 1px white;
-}
-
-h3 {
-    font-size: 3em;
-    padding: .5em 0 .25em 0;
-    color: #EA638C;
-    text-shadow: 2px 1px #30343F;
     position: relative;
 }
 
@@ -210,35 +195,17 @@ hr {
     display: none;
 }
 
-.headings {
-    position: relative;
-    top: 0%;
-    left: 0%;
-    transform: translate(0, 0);
-}
+/* Intro - Tablet screens  */
 
-main {
-    padding: 0 20%;
-    color: white;
-    text-shadow: 1.5px 1.5px #30343F;
-    position: relative;
-
-}
-
-main h3 {
-    color: white;
-}
-
-main p {
-    font-size: 1.5em;
-}
-
-.links {
-    display: flex;
+.intro {
     flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    position: relative;
+    font-size: 1.5rem;
+    max-width: 80%;
+    margin: auto;
+}
+
+.about {
+    max-width: 50%;
 }
 
 .links-portfolio {
@@ -249,13 +216,18 @@ main p {
     position: relative;
 }
 
-.links-portfolio img {
-    max-width: 100%;
+/* Footer - Links to email, GitHub, LinkedIn */
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    position: relative;
 }
 
-.links a {
-    color: #00417C;
-    text-shadow: 1px 1px #30343F;
+#Octocat {
+    max-width: 180px;
 }
 
 h4 {
@@ -263,38 +235,13 @@ h4 {
     text-shadow: 1px 1px #30343F;
     text-decoration: none;
 }
-
-/* Connect section  */
-
-.set_margin {
-    margin: 2rem;
 }
 
-/* Footer  */
-
-footer {
-    color: white;
-    text-shadow: 1px 1px #30343F;
-    padding-top: 3em;
-    position: relative;
-}
-
-.box {
-    border: solid .4rem #00417C;
-}
-}
+/* Media breakpoint for tablet and larger  */
 
 @media  screen and (min-width: 992px) {
     .links-portfolio {
         margin: 0 10% 0 10%;
-    }
-
-    .box {
-        margin: 0 10% 0 10%;
-    }
-    
-    .set_margin {
-        margin: 32px;
     }
 
     h5 {
