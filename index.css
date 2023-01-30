@@ -58,8 +58,8 @@ header {
     justify-content: center;
     background-image: linear-gradient(to bottom left, #214159, #4282B3);
     padding: 1em 0 0 0;
-    border-radius: 2rem;
-    margin: 1rem;
+    border-radius: .75rem .75rem 2rem 2rem;
+    margin-bottom: 1rem;
 }   
 
 /* Intro section - top summary of profile and skills - Mobile  */
@@ -105,7 +105,7 @@ hr {
 /* Portfolio section  */
 
 .portfolio {
-    margin: 1rem;
+    /* margin: 1rem; */
     padding: 1rem 0 .5rem 0;
     background-color: #F0F6FA;
     border-radius: 2rem;
@@ -127,7 +127,7 @@ hr {
 
 .app_card {
     border: solid .4rem #00417C;
-    margin: 2rem;
+    margin: 1rem;
     border-radius: 1.2rem;
     background-color: white;
     box-shadow: 5px 10px lightgray;
@@ -146,6 +146,10 @@ figure {
     margin-bottom: .5rem;
 }
 
+.app_text a {
+    word-break: break-all;
+}
+
 .app_text span {
     font-weight: bold;
 }
@@ -158,7 +162,7 @@ figure {
 
 .set_margin {
     margin: 1rem;
-    background-color: #33658A;
+    background-image: linear-gradient(to bottom left, #97BCD8,  #33658A);
     border-radius: 1.5rem;
 }
 
@@ -181,7 +185,7 @@ figure {
 }
 
 .links img {
-    max-width: 5em;
+    max-width: 3em;
 }
 
 .links a {
@@ -210,6 +214,10 @@ h2 {
 
 hr {
     display: none;
+}
+
+.header-section {
+    margin: 1rem;
 }
 
 /* Intro - Tablet screens  */
@@ -244,7 +252,7 @@ hr {
 }
 
 #Octocat {
-    max-width: 180px;
+    max-width: 120px;
 }
 
 h4 {
@@ -252,13 +260,16 @@ h4 {
     text-shadow: 1px 1px #30343F;
     text-decoration: none;
 }
+
+.portfolio {
+    margin: 1rem;
+}
+
 }
 
 /* Media breakpoint for tablet and larger  */
 
 @media  screen and (min-width: 992px) {
-
-
 
     .app_inner_card {
         display: flex;
