@@ -17,6 +17,13 @@ h1 {
     font-family: 'Lobster Two', cursive;
 }
 
+.frameworkHeading {
+    font-size: 3rem;
+    padding: 0em .5em 0 .5em;
+    font-family: 'Lobster Two', cursive;
+    color: #00417C;
+}
+
 h2 {
     font-size: 2rem;
     padding: 0.25em 0 .5em 0;
@@ -109,6 +116,11 @@ hr {
     padding: 1rem 0 .5rem 0;
     background-color: #F0F6FA;
     border-radius: 2rem;
+}
+
+.frameworkSection {
+    margin: 2rem;
+    padding: 1rem 1 .5rem 1;
 }
 
 .links-portfolio img {
@@ -235,7 +247,7 @@ hr {
 
 .links-portfolio {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     /* align-items: flex-end; */
     justify-content: center;
     position: relative;
