@@ -1,6 +1,7 @@
 
 * {
     margin: 0;
+    /* background-color: #1C3053; */
 }
 
 .container-fluid {
@@ -12,7 +13,7 @@
 .nameTitle {
     /* font-family: 'Dancing Script', cursive; */
     font-family: 'Courier New', Courier, monospace;
-    font-size: 8vh;
+    font-size: 6vh;
     font-weight: bold;
     /* font-size: 8vw; */
 }
@@ -20,7 +21,7 @@
 .title {
     color: skyblue;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 8vh;
+    font-size: 6vh;
 }
 
 .aboutMe {
@@ -54,6 +55,7 @@
     padding-left: 10px;
 }
 
-.test {
-    background-color: yellow;
+.cardSection {
+    margin-left: 10%;
+    margin-right: 10%;
 }
