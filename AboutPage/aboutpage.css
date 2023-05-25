@@ -12,7 +12,7 @@
 .nameTitle {
     /* font-family: 'Dancing Script', cursive; */
     font-family: 'Courier New', Courier, monospace;
-    font-size: 8vh;
+    font-size: 6vh;
     font-weight: bold;
     /* font-size: 8vw; */
 }
@@ -20,7 +20,7 @@
 .title {
     color: skyblue;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 8vh;
+    font-size: 6vh;
 }
 
 .aboutMe {
@@ -52,8 +52,4 @@
     border-right: 0;
     border-left: 0;
     padding-left: 10px;
-}
-
-.test {
-    background-color: yellow;
 }
