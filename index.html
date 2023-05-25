@@ -34,11 +34,25 @@
     <div class="container-fluid vh-100 pt-2">
 
         <!-- Header/NavBar  -->
-        <div class="container bg-light">
-            <div class="row ">
-                <div>
-                    <p class="text-danger">This will be the nav bar later</p>
-                </div>
+
+        <!-- Empty column to push the actual nav bar to the right  -->
+        <div class="row header">
+            <div class="col-2 col-sm-2 col-md-4 col-lg-6 col-xl-8 justify-content-flex-end">
+                <a class="navbar-brand" href="#">
+                    <p class="initials">KR</p>
+                </a>
+            </div>
+
+            <div class="col-10 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+                <nav class="navbar ">
+                    <form class="container-fluid justify-content-flex-end">
+    
+                        <button type="button" class="btn btn-danger">Home</button>
+                        <button type="button" class="btn btn-danger">About</button>
+                        <button type="button" class="btn btn-danger">Projects</button>
+                        <button type="button" class="btn btn-danger">Contact</button>
+                    </form>
+                </nav>
             </div>
         </div>
 
