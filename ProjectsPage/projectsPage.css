@@ -1,0 +1,61 @@
+
+* {
+    margin: 0;
+    /* background-color: #1C3053; */
+}
+
+.container-fluid {
+    background-color: #1C3053;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.nameTitle {
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 6vh;
+    font-weight: bold;
+    /* font-size: 8vw; */
+}
+
+.title {
+    color: skyblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 6vh;
+}
+
+.aboutMe {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vh;
+    font-weight: lighter;
+}
+
+.initials {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 3vh;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+    border-width: 3px;
+    border-color: white;
+    border-style: solid;
+    width: fit-content;
+}
+
+.header {
+    padding-top: 12px;
+    border-top: 8px;
+    border-bottom: 8px;
+    border-color: white;
+    border-style: solid;
+    border-right: 0;
+    border-left: 0;
+    padding-left: 10px;
+}
+
+.cardSection {
+    margin-left: 10%;
+    margin-right: 10%;
+}
